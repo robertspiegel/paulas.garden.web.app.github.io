@@ -1,0 +1,265 @@
+<div class="subpage-header">
+    <h1 class="subpage-title">Freude Schenken</h1>
+</div>
+<div class="subpage-content">
+    <div class="subpage-text">
+        <div class="voucher-page">
+            <div class="container">
+                <div class="preview-section">
+                    <h2 style="margin-bottom: 20px; color: #333;">Live Vorschau</h2>
+                    <div class="gutschein-card motiv-flowerpower" id="previewCard">
+                        <div class="gutschein-title" id="previewTitle">Gutschein</div>
+                        <div class="gutschein-form">
+                            <div class="form-row">
+                                <span>Für:</span>
+                                <span class="form-input" id="previewRecipient">_____________</span>
+                            </div>
+                            <div class="form-row">
+                                <span>Wert:</span>
+                                <span class="form-input" id="previewAmount">______10 €</span>
+                            </div>
+                        </div>
+                        <div class="brand-logo">Meier's<br>Garten</div>
+                    </div>
+                </div>
+                <div class="form-section">
+                    <h2 style="margin-bottom: 25px; color: #333;">Gutschein Generator</h2>
+                    <div class="form-group">
+                        <label>Wähle dein Motiv</label>
+                        <div class="motiv-selector">
+                            <div class="motiv-option active motiv-flowerpower" data-motiv="flowerpower">
+                                <div class="motiv-label">Flowerpower</div>
+                            </div>
+                            <div class="motiv-option motiv-halloween" data-motiv="halloween">
+                                <div class="motiv-label">Happy Halloween</div>
+                            </div>
+                            <div class="motiv-option motiv-bees" data-motiv="bees">
+                                <div class="motiv-label">Happy Bees</div>
+                            </div>
+                            <div class="motiv-option motiv-roses" data-motiv="roses">
+                                <div class="motiv-label">Roses and more</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>1. Für wen ist der Geschenkgutschein?</label>
+                        <input type="text" id="recipientName" placeholder="Name des Empfängers">
+                    </div>
+                    <div class="form-group">
+                        <label>2. Wähle deinen Wunschbetrag</label>
+                        <div class="amount-selector">
+                            <div class="amount-option active" data-amount="10">10 Euro</div>
+                            <div class="amount-option" data-amount="25">25 Euro</div>
+                            <div class="amount-option" data-amount="50">50 Euro</div>
+                            <div class="amount-option" data-amount="100">100 Euro</div>
+                        </div>
+                        <div class="custom-amount">
+                            <input type="number" id="customAmount" placeholder="Wunschbetrag in Euro" min="1">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Angaben zum Käufer</label>
+                        <div class="address-grid">
+                            <input type="text" id="firstName" placeholder="Vorname*" required>
+                            <input type="text" id="lastName" placeholder="Name*" required>
+                        </div>
+                        <div class="address-grid full" style="margin-top: 15px;">
+                            <input type="text" id="street" placeholder="Straße*" required>
+                            <input type="text" id="houseNumber" placeholder="Hausnummer*" required>
+                        </div>
+                        <div class="address-grid" style="margin-top: 15px;">
+                            <input type="text" id="postalCode" placeholder="Postleitzahl*" required>
+                            <input type="text" id="city" placeholder="Ort*" required>
+                        </div>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="privacy" required>
+                        <label for="privacy">
+                            Ich habe die <a href="#" style="color: #667eea;">Datenschutzerklärung</a> zur Kenntnis genommen. *
+                        </label>
+                    </div>
+                    <button class="generate-btn" onclick="generateVoucher()">Jetzt verpflichtend kaufen</button>
+                    <p style="margin-top: 15px; font-size: 0.9rem; color: #666;">* Pflichtfeld</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Formular -->
+    <div class="form-section">
+      <h2 style="margin-bottom: 25px; color: #333;">Gutschein Generator</h2>
+
+      <!-- Motiv Auswahl -->
+      <div class="form-group">
+        <label>Wähle dein Motiv</label>
+        <div class="motiv-selector">
+          <div class="motiv-option active motiv-flowerpower" data-motiv="flowerpower">
+            <div class="motiv-label">Flowerpower</div>
+          </div>
+          <div class="motiv-option motiv-halloween" data-motiv="halloween">
+            <div class="motiv-label">Happy Halloween</div>
+          </div>
+          <div class="motiv-option motiv-bees" data-motiv="bees">
+            <div class="motiv-label">Happy Bees</div>
+          </div>
+          <div class="motiv-option motiv-roses" data-motiv="roses">
+            <div class="motiv-label">Roses and more</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Empfänger -->
+      <div class="form-group">
+        <label>1. Für wen ist der Geschenkgutschein?</label>
+        <input type="text" id="recipientName" placeholder="Name des Empfängers">
+      </div>
+
+      <!-- Betrag -->
+      <div class="form-group">
+        <label>2. Wähle deinen Wunschbetrag</label>
+        <div class="amount-selector">
+          <div class="amount-option active" data-amount="10">10 Euro</div>
+          <div class="amount-option" data-amount="25">25 Euro</div>
+          <div class="amount-option" data-amount="50">50 Euro</div>
+          <div class="amount-option" data-amount="100">100 Euro</div>
+        </div>
+        <div class="custom-amount">
+          <input type="number" id="customAmount" placeholder="Wunschbetrag in Euro" min="1">
+        </div>
+      </div>
+
+      <!-- Käufer Angaben -->
+      <div class="form-group">
+        <label>Angaben zum Käufer</label>
+        <div class="address-grid">
+          <input type="text" id="firstName" placeholder="Vorname*" required>
+          <input type="text" id="lastName" placeholder="Name*" required>
+        </div>
+        <div class="address-grid full" style="margin-top: 15px;">
+          <input type="text" id="street" placeholder="Straße*" required>
+          <input type="text" id="houseNumber" placeholder="Hausnummer*" required>
+        </div>
+        <div class="address-grid" style="margin-top: 15px;">
+          <input type="text" id="postalCode" placeholder="Postleitzahl*" required>
+          <input type="text" id="city" placeholder="Ort*" required>
+        </div>
+      </div>
+
+      <!-- Datenschutz -->
+      <div class="checkbox-group">
+        <input type="checkbox" id="privacy" required>
+        <label for="privacy">
+          Ich habe die <a href="#" style="color: #667eea;">Datenschutzerklärung</a> zur Kenntnis genommen. *
+        </label>
+      </div>
+
+      <button class="generate-btn" onclick="generateVoucher()">Jetzt verpflichtend kaufen</button>
+      <p style="margin-top: 15px; font-size: 0.9rem; color: #666;">* Pflichtfeld</p>
+    </div>
+  </div>
+</div>
+        </div>
+    </div>
+</div>
+
+<link rel="stylesheet" href="pfad/zur/voucher-style-namespaced.css">
+
+<script>
+(function() {
+  let currentMotiv = 'flowerpower';
+  let currentAmount = 10;
+
+  document.querySelectorAll('.motiv-option').forEach(option => {
+    option.addEventListener('click', function () {
+      document.querySelectorAll('.motiv-option').forEach(opt => opt.classList.remove('active'));
+      this.classList.add('active');
+      currentMotiv = this.dataset.motiv;
+      updatePreview();
+    });
+  });
+
+  document.querySelectorAll('.amount-option').forEach(option => {
+    option.addEventListener('click', function () {
+      document.querySelectorAll('.amount-option').forEach(opt => opt.classList.remove('active'));
+      this.classList.add('active');
+      currentAmount = parseInt(this.dataset.amount);
+      document.getElementById('customAmount').value = '';
+      updatePreview();
+    });
+  });
+
+  document.getElementById('customAmount').addEventListener('input', function () {
+    if (this.value) {
+      document.querySelectorAll('.amount-option').forEach(opt => opt.classList.remove('active'));
+      currentAmount = parseInt(this.value) || 0;
+      updatePreview();
+    }
+  });
+
+  document.getElementById('recipientName').addEventListener('input', updatePreview);
+
+  function updatePreview() {
+    const card = document.getElementById('previewCard');
+    const title = document.getElementById('previewTitle');
+    card.className = `gutschein-card motiv-${currentMotiv}`;
+    title.className = currentMotiv === 'halloween' ? 'gutschein-title halloween' : 'gutschein-title';
+    document.getElementById('previewRecipient').textContent = document.getElementById('recipientName').value || '_____________';
+    document.getElementById('previewAmount').textContent = `______${currentAmount} €`;
+  }
+
+  window.generateVoucher = function () {
+    const requiredFields = ['firstName', 'lastName', 'street', 'houseNumber', 'postalCode', 'city'];
+    let isValid = true;
+
+    requiredFields.forEach(id => {
+      const field = document.getElementById(id);
+      if (!field.value.trim()) {
+        field.style.borderColor = '#dc3545';
+        isValid = false;
+      } else {
+        field.style.borderColor = '#e9ecef';
+      }
+    });
+
+    if (!document.getElementById('privacy').checked) {
+      alert('Bitte akzeptieren Sie die Datenschutzerklärung.');
+      isValid = false;
+    }
+
+    if (!isValid) {
+      alert('Bitte füllen Sie alle Pflichtfelder aus.');
+      return;
+    }
+
+    const btn = document.querySelector('.generate-btn');
+    const originalText = btn.textContent;
+    btn.textContent = '✓ Gutschein wird erstellt...';
+    btn.style.background = '#28a745';
+
+    setTimeout(() => {
+      btn.textContent = '✓ Erfolgreich erstellt!';
+      setTimeout(() => {
+        btn.textContent = originalText;
+        btn.style.background = 'linear-gradient(135deg, #667eea, #764ba2)';
+      }, 2000);
+    }, 1500);
+
+    console.log('Gutschein-Daten:', {
+      motiv: currentMotiv,
+      amount: currentAmount,
+      recipient: document.getElementById('recipientName').value,
+      buyer: {
+        firstName: document.getElementById('firstName').value,
+        lastName: document.getElementById('lastName').value,
+        street: document.getElementById('street').value,
+        houseNumber: document.getElementById('houseNumber').value,
+        postalCode: document.getElementById('postalCode').value,
+        city: document.getElementById('city').value
+      }
+    });
+  };
+
+  updatePreview();
+})();
+</script>

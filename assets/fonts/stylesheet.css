@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "cantika";
+  src: url("cantika.woff2") format("woff2"), url("cantika.woff") format("woff"),
+    url("cantika.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
