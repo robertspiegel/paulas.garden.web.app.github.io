@@ -1,530 +1,447 @@
 <!DOCTYPE html>
+
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Paula's Garden</title>
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="assets/fonts/stylesheet.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
-
-  <body>
-    <div class="container">
-      <!-- Main Page -->
-      <div id="mainPage">
-        <header class="header">
-          <a href="index.html" class="logo">
-            <img src="assets/images/logo.png" alt="Paula's Garden Logo" />
-          </a>
-        </header>
-
-        <main class="grid">
-          <div class="card" onclick="showSubpage('lovestory')">
-            <div class="card-image">
-              <img
-                src="assets/images/plovestory.png"
-                alt="Paula's Garden Lovestory"
-                onerror="showPlaceholder(this, 'PAULA\'S GARDEN\nLOVESTORY')"
-              />
-            </div>
-          </div>
-
-          <div class="card" onclick="showSubpage('angebote')">
-            <div class="card-image">
-              <img
-                src="assets/images/bluhendeangebote.png"
-                alt="Blühende Angebote"
-                onerror="showPlaceholder(this, 'BLÜHENDE\nANGEBOTE')"
-              />
-            </div>
-          </div>
-
-          <div class="card" onclick="showSubpage('events')">
-            <div class="card-image">
-              <img
-                src="assets/images/gruneevents.png"
-                alt="Grüne Events"
-                onerror="showPlaceholder(this, 'GRÜNE\nEVENTS')"
-              />
-            </div>
-          </div>
-
-          <div class="card" onclick="showSubpage('freudeSchenken')">
-            <div class="card-image">
-              <img
-                src="assets/images/freudeschenken.png"
-                alt="Freude Schenken"
-                onerror="showPlaceholder(this, 'FREUDE\nSCHENKEN')"
-              />
-            </div>
-          </div>
-
-          <div class="card" onclick="showSubpage('entdecken')">
-            <div class="card-image">
-              <img
-                src="assets/images/paulas-garden-entdecken.png"
-                alt="Paula's Garden Entdecken"
-                onerror="showPlaceholder(this, 'PAULA\'S GARDEN\nENTDECKEN')"
-              />
-            </div>
-          </div>
-
-          <div class="card" onclick="showSubpage('news')">
-            <div class="card-image">
-              <img
-                src="assets/images/blutennews.png"
-                alt="Blüten News"
-                onerror="showPlaceholder(this, 'BLÜTEN\nNEWS')"
-              />
-            </div>
-          </div>
-        </main>
-
-        <footer class="footer">
-          <p>© 2025 - Paula´s Garden</p>
-        </footer>
-      </div>
-
-      <!-- Subpages -->
-      
-
-      <div id="angebote" class="subpage"></div>
-
-      <div id="events" class="subpage">
-        <div class="event-area">
-          <div class="section-title-wrap">
-            <div class="logo">
-              <img src="/assets/images/logo.png" alt="Paula's Garden Logo" />
-            </div>
-            <div class="section-title">
-              <div class="text-block">
-                <h2 class="title">Grüne Events</h2>
-                <p class="subtitle">Wachse über dich hinaus!</p>
-              </div>
-              <div class="title-block">
-                <h5 class="sub-title">Workshops in Paula’s Garden</h5>
-                <p class="info">
-                  Hier findest du alle aktuellen Workshops, Events und Termine in
-                  unserem Gartencenter. Wir freuen uns auf dich!
-                </p>
-              </div>
-            </div>
-            <div class="block-element"></div>
-          </div>
-        
-          <div class="container">
-            <!-- Slider main container -->
-            <!-- Slider main container -->
-            <div class="swiper events-slider">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                  <div
-                    class="event-wrap"
-                    style="
-                      background: url('/assets/images/herbstgesteck.webp') no-repeat
-                        center center / cover;
-                    "
-                    data-title="Paula's Trockenblumenbouquet"
-                    data-description="Schon zu Paulas Zeiten war sie ein Hingucker, jetzt ist sie wieder hochmodern: Die Trockenblume feiert ihr großes Comeback. Bei richtiger Pflege ist sie jahrelang haltbar – und tröstet mit ihren sanften Farben Blumenfans über die kalte Jahreszeit hinweg. In diesem Workshop suchen sich alle Teilnehmenden zunächst eine Vase aus, anschließend werden ganz individuelle Bouquets aus Trockenblumen zusammengestellt."
-                    data-date="August bis 29. November 2025"
-                    data-uhrzeit="15 Uhr"
-                    data-dauer="2 Stunden"
-                    data-kosten="50 Euro, inklusive Vase und Trockenblumen"
-                    data-max-teilnehmer="max. Teilnehmer: 10"
-                    data-image="/assets/images/herbstgesteck.webp"
-                  >
-                    <div class="information">
-                      <span class="date">August bis 29. November 2025</span>
-                      <h4 class="title">
-                        Paulas <br />
-                        Trockenblumenbouquet
-                      </h4>
-                      <span class="details-btn">
-                        Mehr erfahren
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-arrow-right"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
-                          />
-                        </svg>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div
-                    class="event-wrap"
-                    style="
-                      background: url('/assets/images/floristin.webp') no-repeat center
-                        center / cover;
-                    "
-                    data-title="Herbstdeko aus deinem Garten"
-                    data-description="Es muss nicht immer der Kürbis sein. Auch Ähren oder Hagebutten-Zweige können eine wunderschöne Herbstdeko ergeben. In diesem Workshop lernen die Teilnehmenden verschiedene Deko-Ideen kennen, außerdem erfahren sie, wie sie aus den Pflanzen in ihrem eigenen Garten hübsche herbstliche Arrangements zaubern können."
-                    data-date="20. September 2025, 4. Oktober 2025"
-                    data-uhrzeit="15 Uhr"
-                    data-dauer="2 Stunden"
-                    data-kosten="30 Euro, inklusive Materialien"
-                    data-max-teilnehmer="max. Teilnehmer: 15"
-                    data-image="/assets/images/floristin.webp"
-                  >
-                    <div class="information">
-                      <span class="date">20. September 2025, 4. Oktober 2025</span>
-                      <h4 class="title">
-                        Herbstdeko aus <br />
-                        deinem Garten
-                      </h4>
-                      <span class="details-btn">
-                        Mehr erfahren
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-arrow-right"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
-                          />
-                        </svg>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div
-                    class="event-wrap"
-                    style="
-                      background: url('/assets/images/kranzbinden.webp') no-repeat
-                        center center / cover;
-                    "
-                    data-title="Adventskränze selber machen"
-                    data-description="So individuell wie die Teilnehmenden dieses Workshops fallen auch ihre Adventskränze aus. Sie können in alten Kuchenformen, filigranen Birkenästen oder Kaffeetassen entstehen, mit Fichten- oder Kiefernzweigen, Zapfen oder Nüssen, Zimtstangen oder Sternanis dekoriert sein. Paula’s Garden stellt die Materialien, aus denen die Teilnehmenden sich frei bedienen können. Anschließend werden Schritt für Schritt ganz individuelle Adventskränze gefertigt."
-                    data-date="15. und 22. November 2025"
-                    data-uhrzeit="15 Uhr"
-                    data-dauer="2 Stunden"
-                    data-kosten="50 Euro, inklusive Materialien"
-                    data-max-teilnehmer="max. Teilnehmer: 12"
-                    data-image="/assets/images/kranzbinden.webp"
-                  >
-                    <div class="information">
-                      <span class="date">15. und 22. November 2025</span>
-                      <h4 class="title">
-                        Adventskränze <br />
-                        selber machen
-                      </h4>
-                      <span class="details-btn">
-                        Mehr erfahren
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-arrow-right"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
-                          />
-                        </svg>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-        
-                <div class="swiper-slide">
-                  <div
-                    class="event-wrap"
-                    style="
-                      background: url('/assets/images/floristin.webp') no-repeat center
-                        center / cover;
-                    "
-                    data-title="Herbstdeko aus deinem Garten"
-                    data-description="Es muss nicht immer der Kürbis sein. Auch Ähren oder Hagebutten-Zweige können eine wunderschöne Herbstdeko ergeben. In diesem Workshop lernen die Teilnehmenden verschiedene Deko-Ideen kennen, außerdem erfahren sie, wie sie aus den Pflanzen in ihrem eigenen Garten hübsche herbstliche Arrangements zaubern können."
-                    data-date="20. September 2025, 4. Oktober 2025"
-                    data-uhrzeit="15 Uhr"
-                    data-dauer="2 Stunden"
-                    data-kosten="30 Euro, inklusive Materialien"
-                    data-max-teilnehmer="max. Teilnehmer: 15"
-                    data-image="/assets/images/floristin.webp"
-                  >
-                    <div class="information">
-                      <span class="date">20. September 2025, 4. Oktober 2025</span>
-                      <h4 class="title">
-                        Herbstdeko aus <br />
-                        deinem Garten
-                      </h4>
-                      <span class="details-btn">
-                        Mehr erfahren
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-arrow-right"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
-                          />
-                        </svg>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div
-                    class="event-wrap"
-                    style="
-                      background: url('/assets/images/herbstgesteck.webp') no-repeat
-                        center center / cover;
-                    "
-                    data-title="Paula's Trockenblumenbouquet"
-                    data-description="Schon zu Paulas Zeiten war sie ein Hingucker, jetzt ist sie wieder hochmodern: Die Trockenblume feiert ihr großes Comeback. Bei richtiger Pflege ist sie jahrelang haltbar – und tröstet mit ihren sanften Farben Blumenfans über die kalte Jahreszeit hinweg. In diesem Workshop suchen sich alle Teilnehmenden zunächst eine Vase aus, anschließend werden ganz individuelle Bouquets aus Trockenblumen zusammengestellt."
-                    data-date="August bis 29. November 2025"
-                    data-uhrzeit="15 Uhr"
-                    data-dauer="2 Stunden"
-                    data-kosten="50 Euro, inklusive Vase und Trockenblumen"
-                    data-max-teilnehmer="max. Teilnehmer: 10"
-                    data-image="/assets/images/herbstgesteck.webp"
-                  >
-                    <div class="information">
-                      <span class="date">August bis 29. November 2025</span>
-                      <h4 class="title">
-                        Paulas <br />
-                        Trockenblumenbouquet
-                      </h4>
-                      <span class="details-btn">
-                        Mehr erfahren
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-arrow-right"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
-                          />
-                        </svg>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div
-                    class="event-wrap"
-                    style="
-                      background: url('/assets/images/kranzbinden.webp') no-repeat
-                        center center / cover;
-                    "
-                    data-title="Adventskränze selber machen"
-                    data-description="So individuell wie die Teilnehmenden dieses Workshops fallen auch ihre Adventskränze aus. Sie können in alten Kuchenformen, filigranen Birkenästen oder Kaffeetassen entstehen, mit Fichten- oder Kiefernzweigen, Zapfen oder Nüssen, Zimtstangen oder Sternanis dekoriert sein. Paula’s Garden stellt die Materialien, aus denen die Teilnehmenden sich frei bedienen können. Anschließend werden Schritt für Schritt ganz individuelle Adventskränze gefertigt."
-                    data-date="15. und 22. November 2025"
-                    data-uhrzeit="15 Uhr"
-                    data-dauer="2 Stunden"
-                    data-kosten="50 Euro, inklusive Materialien"
-                    data-max-teilnehmer="max. Teilnehmer: 12"
-                    data-image="/assets/images/kranzbinden.webp"
-                  >
-                    <div class="information">
-                      <span class="date">15. und 22. November 2025</span>
-                      <h4 class="title">
-                        Adventskränze <br />
-                        selber machen
-                      </h4>
-                      <span class="details-btn">
-                        Mehr erfahren
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-arrow-right"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
-                          />
-                        </svg>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Paula's Garden</title>
+<link href="assets/css/swiper-bundle.min.css" rel="stylesheet"/>
+<link href="assets/fonts/stylesheet.css" rel="stylesheet"/>
+<link href="assets/css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="container">
+<!-- Main Page -->
+<div id="mainPage">
+<header class="header">
+<a class="logo" href="index.html">
+<img alt="Paula's Garden Logo" src="assets/images/logo.png"/>
+</a>
+</header>
+<main class="grid">
+<div class="card" onclick="showSubpage('lovestory')">
+<div class="card-image">
+<img alt="Paula's Garden Lovestory" onerror="showPlaceholder(this, 'PAULA\'S GARDEN\nLOVESTORY')" src="assets/images/plovestory.png"/>
+</div>
+</div>
+<div class="card" onclick="showSubpage('angebote')">
+<div class="card-image">
+<img alt="Blühende Angebote" onerror="showPlaceholder(this, 'BLÜHENDE\nANGEBOTE')" src="assets/images/bluhendeangebote.png"/>
+</div>
+</div>
+<div class="card" onclick="showSubpage('events')">
+<div class="card-image">
+<img alt="Grüne Events" onerror="showPlaceholder(this, 'GRÜNE\nEVENTS')" src="assets/images/gruneevents.png"/>
+</div>
+</div>
+<div class="card" onclick="showSubpage('freudeSchenken')">
+<div class="card-image">
+<img alt="Freude Schenken" onerror="showPlaceholder(this, 'FREUDE\nSCHENKEN')" src="assets/images/freudeschenken.png"/>
+</div>
+</div>
+<div class="card" onclick="showSubpage('entdecken')">
+<div class="card-image">
+<img alt="Paula's Garden Entdecken" onerror="showPlaceholder(this, 'PAULA\'S GARDEN\nENTDECKEN')" src="assets/images/paulas-garden-entdecken.png"/>
+</div>
+</div>
+<div class="card" onclick="showSubpage('news')">
+<div class="card-image">
+<img alt="Blüten News" onerror="showPlaceholder(this, 'BLÜTEN\nNEWS')" src="assets/images/blutennews.png"/>
+</div>
+</div>
+</main>
+<footer class="footer">
+<p>© 2025 - Paula´s Garden</p>
+</footer>
+</div>
+<!-- Subpages -->
+<div class="subpage" id="angebote"><div class="bluhende-angebote-area">
+<div class="subpage-header">
+<div class="container">
+<div class="logo">
+<img alt="Paula's Garden Logo" src="/assets/images/logo.png"/>
+</div>
+<div class="content">
+<div class="text-block">
+<div class="subtitle">Wachse über dich hinaus.</div>
+<div class="title">Blühende<br/>Angebote</div>
+</div>
+<div class="description">
+          Hier findest du die saisonal wechselnden Angebote von Paula’s Garden.
+          Bereit für die kalte Jahreszeit?<br/>
+          Mit unseren Angeboten kommst du farbenfroh durch Herbst und Winter!
         </div>
-      </div>
-      <div id="news" class="subpage"></div>
-      <div id="details" class="subpage">
-        <div class="details-area">
-          <div class="container">
-            <div class="details-wrapper">
-              <!-- Live Vorschau -->
-              <div class="preview-section">
-                <h2 style="margin-bottom: 20px; color: #333">Live Vorschau</h2>
-                <div class="gutschein-card motiv-flowerpower" id="previewCard">
-                  <div class="gutschein-form">
-                    <span id="previewRecipient">Hasib</span>
-                    <span  id="previewAmount">10 €</span>
-                    
-                  </div>
-                </div>
-              </div>
-        
-              <!-- Formular -->
-              <div class="form-section">
-                <h2 style="margin-bottom: 25px; color: #333">Gutschein Generator</h2>
-        
-                <!-- Motiv Auswahl -->
-                <div class="form-group">
-                  <label>Wähle dein Motiv</label>
-                  <div class="motiv-selector">
-                    <div
-                      class="motiv-option active motiv-flowerpower"
-                      data-motiv="flowerpower"
-                    >
-                      <div class="motiv-label">Flowerpower</div>
-                    </div>
-                    <div class="motiv-option motiv-halloween" data-motiv="halloween">
-                      <div class="motiv-label">Happy Halloween</div>
-                    </div>
-                    <div class="motiv-option motiv-bees" data-motiv="bees">
-                      <div class="motiv-label">Happy Bees</div>
-                    </div>
-                    <div class="motiv-option motiv-roses" data-motiv="roses">
-                      <div class="motiv-label">Roses and more</div>
-                    </div>
-                  </div>
-                </div>
-        
-                <!-- Empfänger -->
-                <div class="form-group">
-                  <label>1. Für wen ist der Geschenkgutschein?</label>
-                  <input
-                    type="text"
-                    id="recipientName"
-                    placeholder="Name des Empfängers"
-                    maxlength="13"
-                  />
-                </div>
-        
-                <!-- Betrag -->
-                <div class="form-group">
-                  <label>2. Wähle deinen Wunschbetrag</label>
-                  <div class="amount-selector">
-                    <div class="amount-option active" data-amount="10">10 Euro</div>
-                    <div class="amount-option" data-amount="25">25 Euro</div>
-                    <div class="amount-option" data-amount="50">50 Euro</div>
-                    <div class="amount-option" data-amount="100">100 Euro</div>
-                  </div>
-                  <div class="custom-amount">
-                    <input
-                      type="number"
-                      id="customAmount"
-                      placeholder="Wunschbetrag in Euro"
-                      min="1"
-                      maxlength="3"
-                    />
-                  </div>
-                </div>
-        
-                <!-- Käufer Angaben -->
-                <div class="form-group">
-                  <label>Angaben zum Käufer</label>
-                  <div class="address-grid">
-                    <input type="text" id="firstName" placeholder="Vorname*" required />
-                    <input type="text" id="lastName" placeholder="Name*" required />
-                  </div>
-                  <div class="address-grid full" style="margin-top: 15px">
-                    <input type="text" id="street" placeholder="Straße*" required />
-                    <input
-                      type="text"
-                      id="houseNumber"
-                      placeholder="Hausnummer*"
-                      required
-                    />
-                  </div>
-                  <div class="address-grid" style="margin-top: 15px">
-                    <input
-                      type="text"
-                      id="postalCode"
-                      placeholder="Postleitzahl*"
-                      required
-                    />
-                    <input type="text" id="city" placeholder="Ort*" required />
-                  </div>
-                </div>
-        
-                <!-- Datenschutz -->
-                <div class="checkbox-group">
-                  <input type="checkbox" id="privacy" required />
-                  <label for="privacy">
+</div>
+</div>
+</div>
+<div class="container">
+<!-- Slider main container -->
+<!-- Slider main container -->
+<div class="swiper mySwiper">
+<!-- Additional required wrapper -->
+<div class="swiper-wrapper">
+<!-- Slides -->
+<div class="swiper-slide">
+<div class="bluhende-angebote-wrap" style="
+              background: url('/assets/images/flowers/herbstastern.png')
+                no-repeat center center / cover;
+            ">
+<div class="information">
+<h4 class="title">Herbstastern-Mix</h4>
+<p class="info">
+                Wenn viele Blumen schon verblüht sind, bringt die Herbstaster
+                noch frische Farbe in dein Blumenbeet!
+              </p>
+<h3 class="price"><span>2-Liter-Topf,</span> 3,99 Euro</h3>
+<div class="details-btn">
+<a href="/index.html">
+                  Mehr erfahren
+                  <svg class="bi bi-arrow-right" fill="currentColor" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" fill-rule="evenodd"></path>
+</svg>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="bluhende-angebote-wrap" style="
+              background: url('/assets/images/flowers/chrysantheme.png')
+                no-repeat center center / cover;
+            ">
+<div class="information">
+<h4 class="title">Chrysantheme</h4>
+<p class="info">
+                Anspruchslos und pflegeleicht: Die Chrysantheme ist die perfekte
+                Herbstblume für Anfänger!
+              </p>
+<h3 class="price"><span>verschiedene Farben,</span> 4,99 Euro</h3>
+<div class="details-btn">
+<a href="/index.html">
+                  Mehr erfahren
+                  <svg class="bi bi-arrow-right" fill="currentColor" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" fill-rule="evenodd"></path>
+</svg>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="bluhende-angebote-wrap" style="
+              background: url('/assets/images/flowers/herbstanemone.png')
+                no-repeat center center / cover;
+            ">
+<div class="information">
+<h4 class="title">Herbstanemone</h4>
+<p class="info">
+                Diese Blume besticht durch zarte Blüten, die bis spät im Oktober
+                blühen.
+              </p>
+<h3 class="price"><span>2-Liter-Topf, </span>14,90 Euro</h3>
+<div class="details-btn">
+<a href="/index.html">
+                  Mehr erfahren
+                  <svg class="bi bi-arrow-right" fill="currentColor" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" fill-rule="evenodd"></path>
+</svg>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="bluhende-angebote-wrap" style="
+              background: url('/assets/images/flowers/winterheide.png')
+                no-repeat center center / cover;
+            ">
+<div class="information">
+<h4 class="title">Winterheide (Roter Strauch)</h4>
+<p class="info">
+                Die immergrüne Winterheide bringt Farbe in die kalte Jahreszeit
+                und erfreut nicht nur Menschen, sondern auch Bienen, die im
+                Frühjahr von ihnen angezogen werden.
+              </p>
+<h3 class="price">4,75 Euro</h3>
+<div class="details-btn">
+<a href="/index.html">
+                  Mehr erfahren
+                  <svg class="bi bi-arrow-right" fill="currentColor" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" fill-rule="evenodd"></path>
+</svg>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="bluhende-angebote-wrap" style="
+              background: url('/assets/images/flowers/ringelblume.png')
+                no-repeat center center / cover;
+            ">
+<div class="information">
+<h4 class="title">Ringelblume</h4>
+<p class="info">
+                Diese Alleskönnerin hält herbstlichen Temperaturen problemlos
+                stand und verbessert nicht nur die Bodenqualität – sie ist auch
+                als Heilpflanze bekannt.
+              </p>
+<h3 class="price"><span>2-Liter-Topf,</span> 4,79 Euro</h3>
+<div class="details-btn">
+<a href="/index.html">
+                  Mehr erfahren
+                  <svg class="bi bi-arrow-right" fill="currentColor" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" fill-rule="evenodd"></path>
+</svg>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="bluhende-angebote-wrap" style="
+              background: url('/assets/images/flowers/alpenveilchen.png')
+                no-repeat center center / cover;
+            ">
+<div class="information">
+<h4 class="title">Alpenveilchen</h4>
+<p class="info">
+                Die zarten Blüten des Alpenveilchens sind zeitlos – und blühen
+                sogar bis Februar!
+              </p>
+<h3 class="price"><span>10,5 cm Topf, </span> 3,99 Euro</h3>
+<div class="details-btn">
+<a href="/index.html">
+                  Mehr erfahren
+                  <svg class="bi bi-arrow-right" fill="currentColor" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" fill-rule="evenodd"></path>
+</svg>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+<div class="subpage" id="events"><div class="subpage-header">
+<h1 class="subpage-title">Grüne Events</h1>
+</div><div class="subpage-content">
+<div class="subpage-text">
+<h2>Kommende Veranstaltungen</h2>
+<p class="placeholder-content">
+      Präsentieren Sie hier Ihre Events und Veranstaltungen.<br/><br/>
+      Workshops, Gartenführungen, saisonale Events - <br/>
+      alles was Ihre Besucher interessieren könnte.
+    </p>
+</div>
+</div></div>
+<div class="subpage" id="news"><div class="news-area">
+<div class="section-title-wrap">
+<div class="logo">
+<img alt="Paula's Garden Logo" src="/assets/images/logo.png"/>
+</div>
+<div class="section-title">
+<div class="text-block">
+<h2 class="title">Blüten News</h2>
+<p class="subtitle">Wachse über dich hinaus!</p>
+</div>
+<div class="title-block">
+<h5 class="sub-title">Aktuelle Neuigkeiten</h5>
+</div>
+</div>
+<div class="block-element"></div>
+</div>
+<div class="container">
+<div class="news-card">
+<div class="news-card-image" style="background-image: url('/assets/images/events/event-005.webp')"></div>
+<div class="news-card-content">
+<h3>Workshops in Paula’s Garden</h3>
+<p>
+          Hier findest du alle aktuellen Workshops, Events und Termine in
+          unserem Gartencenter. Wir freuen uns auf dich!
+        </p>
+<div class="text-end">
+<a class="news-card-link" href="#">
+            Mehr erfahren
+            <svg class="bi bi-arrow-right" fill="currentColor" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" fill-rule="evenodd"></path>
+</svg>
+</a>
+</div>
+</div>
+</div>
+<div class="news-card">
+<div class="news-card-image" style="background-image: url('/assets/images/events/event-006.webp')"></div>
+<div class="news-card-content">
+<h3>Paulas Trockenblumenbouquet</h3>
+<p>
+          Schon zu Paulas Zeiten war sie ein Hingucker, jetzt ist sie wieder
+          hochmodern: Die Trockenblume feiert ihr großes Comeback.
+        </p>
+<div class="text-end">
+<a class="news-card-link" href="#">
+            Mehr erfahren
+            <svg class="bi bi-arrow-right" fill="currentColor" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" fill-rule="evenodd"></path>
+</svg>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+<div class="subpage" id="details">
+<div class="details-area">
+<div class="container">
+<div class="details-wrapper">
+<!-- Live Vorschau -->
+<div class="preview-section">
+<h2 style="margin-bottom: 20px; color: #333">Live Vorschau</h2>
+<div class="gutschein-card motiv-flowerpower" id="previewCard">
+<div class="gutschein-form">
+<span id="previewRecipient">Hasib</span>
+<span id="previewAmount">10 €</span>
+</div>
+</div>
+</div>
+<!-- Formular -->
+<div class="form-section">
+<h2 style="margin-bottom: 25px; color: #333">Gutschein Generator</h2>
+<!-- Motiv Auswahl -->
+<div class="form-group">
+<label>Wähle dein Motiv</label>
+<div class="motiv-selector">
+<div class="motiv-option active motiv-flowerpower" data-motiv="flowerpower">
+<div class="motiv-label">Flowerpower</div>
+</div>
+<div class="motiv-option motiv-halloween" data-motiv="halloween">
+<div class="motiv-label">Happy Halloween</div>
+</div>
+<div class="motiv-option motiv-bees" data-motiv="bees">
+<div class="motiv-label">Happy Bees</div>
+</div>
+<div class="motiv-option motiv-roses" data-motiv="roses">
+<div class="motiv-label">Roses and more</div>
+</div>
+</div>
+</div>
+<!-- Empfänger -->
+<div class="form-group">
+<label>1. Für wen ist der Geschenkgutschein?</label>
+<input id="recipientName" maxlength="13" placeholder="Name des Empfängers" type="text"/>
+</div>
+<!-- Betrag -->
+<div class="form-group">
+<label>2. Wähle deinen Wunschbetrag</label>
+<div class="amount-selector">
+<div class="amount-option active" data-amount="10">10 Euro</div>
+<div class="amount-option" data-amount="25">25 Euro</div>
+<div class="amount-option" data-amount="50">50 Euro</div>
+<div class="amount-option" data-amount="100">100 Euro</div>
+</div>
+<div class="custom-amount">
+<input id="customAmount" maxlength="3" min="1" placeholder="Wunschbetrag in Euro" type="number"/>
+</div>
+</div>
+<!-- Käufer Angaben -->
+<div class="form-group">
+<label>Angaben zum Käufer</label>
+<div class="address-grid">
+<input id="firstName" placeholder="Vorname*" required="" type="text"/>
+<input id="lastName" placeholder="Name*" required="" type="text"/>
+</div>
+<div class="address-grid full" style="margin-top: 15px">
+<input id="street" placeholder="Straße*" required="" type="text"/>
+<input id="houseNumber" placeholder="Hausnummer*" required="" type="text"/>
+</div>
+<div class="address-grid" style="margin-top: 15px">
+<input id="postalCode" placeholder="Postleitzahl*" required="" type="text"/>
+<input id="city" placeholder="Ort*" required="" type="text"/>
+</div>
+</div>
+<!-- Datenschutz -->
+<div class="checkbox-group">
+<input id="privacy" required="" type="checkbox"/>
+<label for="privacy">
                     Ich habe die
                     <a href="#" style="color: #667eea">Datenschutzerklärung</a> zur
                     Kenntnis genommen. Ich stimme zu, dass meine Angaben und Daten
                     elektronisch erhoben und gespeichert werden. Die Einwilligung kann
                     ich jederzeit für die Zukunft widerrufen. *
                   </label>
-                </div>
-        
-                <button class="generate-btn" onclick="generateVoucher()">
+</div>
+<button class="generate-btn" onclick="generateVoucher()">
                   Jetzt verpflichtend kaufen
                 </button>
-        
-                <p style="margin-top: 15px; font-size: 0.9rem; color: #666">
+<p style="margin-top: 15px; font-size: 0.9rem; color: #666">
                   * Pflichtfeld
                 </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-      </div>
-
-      <div id="entdecken" class="subpage">
-        <div class="entdecken-content">
-          <div class="section-title-wrap">
-            <div class="logo">
-              <img src="/assets/images/logo.png" alt="Paula's Garden Logo">
-            </div>
-            <div class="section-title">
-              <div class="text-block">
-                <h2 class="title">Paula´s Garden Entdecken</h2>
-                <p class="subtitle">Gebäudeplan!</p>
-              </div>
-            </div>
-            <div class="block-element"></div>
-          </div>
-          <div class="text-center">
-            <img class="image" src="assets/images/paulas-garden-raumplan.png" alt="paulas garden raumplan">
-          </div>
-
-        </div>
-      </div>
-      <div id="freudeSchenken" class="subpage"></div>
-
-    </div>
-    <div id="lovestory" class="subpage">
-      <style>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="subpage" id="entdecken">
+<div class="entdecken-content">
+<div class="section-title-wrap">
+<div class="logo">
+<img alt="Paula's Garden Logo" src="/assets/images/logo.png"/>
+</div>
+<div class="section-title">
+<div class="text-block">
+<h2 class="title">Paula´s Garden Entdecken</h2>
+<p class="subtitle">Gebäudeplan!</p>
+</div>
+</div>
+<div class="block-element"></div>
+</div>
+<div class="text-center">
+<img alt="paulas garden raumplan" class="image" src="assets/images/paulas-garden-raumplan.png"/>
+</div>
+</div>
+</div>
+<div class="subpage" id="freudeSchenken"><div class="news-area">
+<div class="section-title-wrap">
+<div class="logo">
+<img alt="Paula's Garden Logo" src="/assets/images/logo.png"/>
+</div>
+<div class="section-title">
+<div class="text-block">
+<h2 class="title">Freude schenken</h2>
+</div>
+<div class="title-block"></div>
+</div>
+<div class="block-element"></div>
+</div>
+<div class="container">
+<div class="gift-card-section">
+<div class="gift-card-image">
+<p class="subtitle">Verschenke pures Gartenglück!</p>
+<h2 class="title">
+          Gutscheine für <br/>
+          Paula’s Garden
+        </h2>
+<img alt="Gutschein für Paula’s Garden" src="/assets/images/news.png"/>
+</div>
+<div class="gift-card-content">
+<p class="gift-card-description">
+          Wähle eins der Motive sowie deinen Wunschbetrag aus. Schreibe den
+          Namen des beschenkten Menschen in die Eingabemaske. Dein Gutschein
+          wird durch deine Bestellung direkt hier in Paula’s Garden ausgedruckt.
+          Du kannst ihn sofort bezahlen und mitnehmen!
+        </p>
+<a class="gift-card-button" href="Javascript:void(0)" onclick="showSubpage('details')">
+          Dein individueller Gutschein
+        </a>
+</div>
+</div>
+</div>
+</div></div>
+</div>
+<div class="subpage" id="lovestory">
+<style>
         #lovestory.subpage {
           position: relative;
           inset: 0;
@@ -541,57 +458,49 @@
           display: block;
         }
       </style>
-
-      <img
-        src="assets/images/paulas-garden-lovestory.webp"
-        alt="Paula's Garden Lovestory"
-      />
-    </div>
-    <!-- Back Button (only visible on subpages) -->
-    <div id="backButton" class="back-button hidden" onclick="showMainPage()">
-      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="78.9235305786133" height="75.16524505615234" viewBox="34 914.8347778320312 78.9235305786133 75.16524505615234"><g transform="matrix(1,0,0,1,34,914.8347778320312)"><g><g><path d="M 110.0849685668945 81.34088134765625 L 98.24645233154297 81.34088134765625 C 91.70765686035156 81.34088134765625 86.40793609619141 86.38821411132812 86.40793609619141 92.61566925048828 L 86.40793609619141 103.8904495239258 C 86.40793609619141 110.1178970336914 91.70765686035156 115.1652297973633 98.24645233154297 115.1652297973633 L 110.0849685668945 115.1652297973633 C 116.6238174438477 115.1652297973633 121.9235305786133 110.1178970336914 121.9235305786133 103.8904495239258 L 121.9235305786133 92.61566925048828 C 121.9235305786133 86.38821411132812 116.6238174438477 81.34088134765625 110.0849685668945 81.34088134765625 M 66.67705535888672 81.34088134765625 L 54.83852767944336 81.34088134765625 C 48.29971313476562 81.34088134765625 43 86.38821411132812 43 92.61566925048828 L 43 103.8904495239258 C 43 110.1178970336914 48.29971313476562 115.1652297973633 54.83852767944336 115.1652297973633 L 66.67705535888672 115.1652297973633 C 73.21587371826172 115.1652297973633 78.51559448242188 110.1178970336914 78.51559448242188 103.8904495239258 L 78.51559448242188 92.61566925048828 C 78.51559448242188 86.38821411132812 73.21587371826172 81.34088134765625 66.67705535888672 81.34088134765625 M 110.0849685668945 39.99998474121094 L 98.24645233154297 39.99998474121094 C 91.70765686035156 39.99998474121094 86.40793609619141 45.04733276367188 86.40793609619141 51.2747802734375 L 86.40793609619141 62.54956817626953 C 86.40793609619141 68.77700805664062 91.70765686035156 73.82435607910156 98.24645233154297 73.82435607910156 L 110.0849685668945 73.82435607910156 C 116.6238174438477 73.82435607910156 121.9235305786133 68.77700805664062 121.9235305786133 62.54956817626953 L 121.9235305786133 51.2747802734375 C 121.9235305786133 45.04733276367188 116.6238174438477 39.99998474121094 110.0849685668945 39.99998474121094 M 78.51559448242188 51.2747802734375 L 78.51559448242188 62.54956817626953 C 78.51559448242188 68.77700805664062 73.21587371826172 73.82435607910156 66.67705535888672 73.82435607910156 L 54.83852767944336 73.82435607910156 C 48.29971313476562 73.82435607910156 43 68.77700805664062 43 62.54956817626953 L 43 51.2747802734375 C 43 45.04733276367188 48.29971313476562 39.99998474121094 54.83852767944336 39.99998474121094 L 66.67705535888672 39.99998474121094 C 73.21587371826172 39.99998474121094 78.51559448242188 45.04733276367188 78.51559448242188 51.2747802734375" transform="matrix(1,0,0,1,-43,-39.99998474121094)" fill="#75a394" fill-rule="evenodd"/></g></g></g></svg>
-    </div>
-
-    <!-- event modal  -->
-    <div id="modalOverlay" class="modal-overlay hidden event-modal-wrap">
-      <div id="modal" class="modal">
-        <button id="modalClose" class="modal-close">×</button>
-        <div class="modal-image" id="modalImg">
-          <h2 id="modalTitle"></h2>
-        </div>
-        <div class="modal-body">
-          <p id="modalDescription"></p>
-          <div class="modal-footer-wrap">
-              <ul class="details-box">
-                <li><strong>Datum:</strong> <span id="modalDate"></span></li>
-                <li><strong>Uhrzeit:</strong> <span id="modalUhrzeit"></span></p>
-                <li><strong>Dauer:</strong> <span id="modalDauer"></span></li>
-                <li><strong>Kosten:</strong> <span id="modalKosten"></span></li>
-              </ul>
-              <div class="modal-footer">
-                <div class="max-participants" id="modalMaxTeilnehmer"></div>
-                <a href="/" class="btn-register">Anmelden</a>
-              </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="modalSuccess" class="modal-overlay hidden success-modal-wrap">
-      <div id="modal" class="modal">
-        <button id="modalClose" class="modal-close">×</button>
-        <div class="modal-body">
-          <h3 class="success-title">Bestellung eingegangen</h3>
-          <p>Die Bestellung deines Gutscheins ist eingegangen und wird für dich gedruckt. Du kannst ihn in 10 Minuten an der Kasse 4 abholen und direkt mit deinen weiteren Einkäufen bezahlen. Wir wünschen dir und dem von dir beschenkten Menschen viel Freude damit.</p>
-          <h5 class="success-subtitle">Dein Paula’s Garden Team</h5>
-          <button id="modalOkay">Oke</button>
-        </div>
-      </div>
-    </div>
-
-    
-    <script src="assets/js/swiper-bundle.min.js"></script>
-    <script>
+<img alt="Paula's Garden Lovestory" src="assets/images/paulas-garden-lovestory.webp">
+</img></div>
+<!-- Back Button (only visible on subpages) -->
+<div class="back-button hidden" id="backButton" onclick="showMainPage()">
+<svg height="75.16524505615234" viewbox="34 914.8347778320312 78.9235305786133 75.16524505615234" width="78.9235305786133" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g transform="matrix(1,0,0,1,34,914.8347778320312)"><g><g><path d="M 110.0849685668945 81.34088134765625 L 98.24645233154297 81.34088134765625 C 91.70765686035156 81.34088134765625 86.40793609619141 86.38821411132812 86.40793609619141 92.61566925048828 L 86.40793609619141 103.8904495239258 C 86.40793609619141 110.1178970336914 91.70765686035156 115.1652297973633 98.24645233154297 115.1652297973633 L 110.0849685668945 115.1652297973633 C 116.6238174438477 115.1652297973633 121.9235305786133 110.1178970336914 121.9235305786133 103.8904495239258 L 121.9235305786133 92.61566925048828 C 121.9235305786133 86.38821411132812 116.6238174438477 81.34088134765625 110.0849685668945 81.34088134765625 M 66.67705535888672 81.34088134765625 L 54.83852767944336 81.34088134765625 C 48.29971313476562 81.34088134765625 43 86.38821411132812 43 92.61566925048828 L 43 103.8904495239258 C 43 110.1178970336914 48.29971313476562 115.1652297973633 54.83852767944336 115.1652297973633 L 66.67705535888672 115.1652297973633 C 73.21587371826172 115.1652297973633 78.51559448242188 110.1178970336914 78.51559448242188 103.8904495239258 L 78.51559448242188 92.61566925048828 C 78.51559448242188 86.38821411132812 73.21587371826172 81.34088134765625 66.67705535888672 81.34088134765625 M 110.0849685668945 39.99998474121094 L 98.24645233154297 39.99998474121094 C 91.70765686035156 39.99998474121094 86.40793609619141 45.04733276367188 86.40793609619141 51.2747802734375 L 86.40793609619141 62.54956817626953 C 86.40793609619141 68.77700805664062 91.70765686035156 73.82435607910156 98.24645233154297 73.82435607910156 L 110.0849685668945 73.82435607910156 C 116.6238174438477 73.82435607910156 121.9235305786133 68.77700805664062 121.9235305786133 62.54956817626953 L 121.9235305786133 51.2747802734375 C 121.9235305786133 45.04733276367188 116.6238174438477 39.99998474121094 110.0849685668945 39.99998474121094 M 78.51559448242188 51.2747802734375 L 78.51559448242188 62.54956817626953 C 78.51559448242188 68.77700805664062 73.21587371826172 73.82435607910156 66.67705535888672 73.82435607910156 L 54.83852767944336 73.82435607910156 C 48.29971313476562 73.82435607910156 43 68.77700805664062 43 62.54956817626953 L 43 51.2747802734375 C 43 45.04733276367188 48.29971313476562 39.99998474121094 54.83852767944336 39.99998474121094 L 66.67705535888672 39.99998474121094 C 73.21587371826172 39.99998474121094 78.51559448242188 45.04733276367188 78.51559448242188 51.2747802734375" fill="#75a394" fill-rule="evenodd" transform="matrix(1,0,0,1,-43,-39.99998474121094)"></path></g></g></g></svg>
+</div>
+<!-- event modal  -->
+<div class="modal-overlay hidden event-modal-wrap" id="modalOverlay">
+<div class="modal" id="modal">
+<button class="modal-close" id="modalClose">×</button>
+<div class="modal-image" id="modalImg">
+<h2 id="modalTitle"></h2>
+</div>
+<div class="modal-body">
+<p id="modalDescription"></p>
+<div class="modal-footer-wrap">
+<ul class="details-box">
+<li><strong>Datum:</strong> <span id="modalDate"></span></li>
+<li><strong>Uhrzeit:</strong> <span id="modalUhrzeit"></span>
+<li><strong>Dauer:</strong> <span id="modalDauer"></span></li>
+<li><strong>Kosten:</strong> <span id="modalKosten"></span></li>
+</li></ul>
+<div class="modal-footer">
+<div class="max-participants" id="modalMaxTeilnehmer"></div>
+<a class="btn-register" href="/">Anmelden</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="modal-overlay hidden success-modal-wrap" id="modalSuccess">
+<div class="modal" id="modal">
+<button class="modal-close" id="modalClose">×</button>
+<div class="modal-body">
+<h3 class="success-title">Bestellung eingegangen</h3>
+<p>Die Bestellung deines Gutscheins ist eingegangen und wird für dich gedruckt. Du kannst ihn in 10 Minuten an der Kasse 4 abholen und direkt mit deinen weiteren Einkäufen bezahlen. Wir wünschen dir und dem von dir beschenkten Menschen viel Freude damit.</p>
+<h5 class="success-subtitle">Dein Paula’s Garden Team</h5>
+<button id="modalOkay">Oke</button>
+</div>
+</div>
+</div>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script>
       function showSubpage(pageId) {
         // Hide main page
         document.getElementById("mainPage").style.display = "none";
@@ -843,8 +752,8 @@
       window.addEventListener("resize", setViewportHeight);
       setViewportHeight();
     </script>
-    <!-- details script  -->
-    <script>
+<!-- details script  -->
+<script>
       let currentMotiv = "flowerpower";
       let currentAmount = 10;
     
@@ -987,5 +896,5 @@
       // Initial preview update
       updatePreview();
     </script>
-  </body>
+</body>
 </html>
